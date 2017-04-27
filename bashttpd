@@ -71,8 +71,8 @@ warn() { echo "WARNING: $@" >&2; }
 #   When a client's requested URI has the word 'root' in it, serve up
 #   a directory listing of /
 #
-# DOCROOT=/var/www/html
-# on_uri_match '/(.*)' serve_dir_or_file_from "$DOCROOT"
+DOCROOT=/var/www/html
+on_uri_match '/(.*)' serve_dir_or_file_from "$DOCROOT"
 #   When any URI request is made, attempt to serve a directory listing
 #   or file content based on the request URI, by mapping URI's to local
 #   paths relative to the specified "$DOCROOT"
