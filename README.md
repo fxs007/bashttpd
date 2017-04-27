@@ -15,6 +15,7 @@ Examples
 Or
 
       netcat -lp 8080 -e ./bashttpd
+      At Ubuntu16, it is
       nc.traditional -lp 8080 -e ./bashttpd
 
 Note that in the `socat` example above, the web server will immediately exit once the first connection closes. If you wish to serve to more than one client - like most servers do, then use the variant:
